@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+    <script src="matter.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+  apiKey: "AIzaSyArMdpsykgSBzQmVzn5UVXbXVex66DDkMQ",
+  authDomain: "realtime-painting-f1644.firebaseapp.com",
+  databaseURL: "https://realtime-painting-f1644.firebaseio.com",
+  projectId: "realtime-painting-f1644",
+  storageBucket: "realtime-painting-f1644.appspot.com",
+  messagingSenderId: "970940074797",
+  appId: "1:970940074797:web:7adbfd54b0b3e05b6221a4"
+};
+    firebase.initializeApp(firebaseConfig);
+</script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+</head>
+<body>
+<div id = "canvascontainer">
+  <script src="sketch.js"></script>
+</div>
+<p>
+  <button id = "clearbutton">
+    clearDrawing
+  </button>
+</p>
+</body>
+</html>
